@@ -1,0 +1,19 @@
+package day34maps;
+
+import java.util.Hashtable;
+
+public class HashTable01 {
+
+	public static void main(String[] args) {
+		
+		Hashtable<Integer, String> ht1 = new Hashtable<>();
+		
+		ht1.put(100, "Ali");
+		ht1.put(101, "Veli");
+		ht1.put(102, "Can");
+		
+		System.out.println(ht1);
+		
+	}
+
+}

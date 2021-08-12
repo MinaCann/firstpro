@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+/Users/CanTuran/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+3370377223.index
+1004271397.index
+29749752.index
+3937676258.index
+2537459140.index

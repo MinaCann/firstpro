@@ -1,0 +1,21 @@
+package day33collections;
+
+import java.util.LinkedHashSet;
+
+public class LinkedHashSet01 {
+
+	public static void main(String[] args) {
+		
+		LinkedHashSet<String> lhs1 = new LinkedHashSet<>();
+		 
+		lhs1.add("A");
+		lhs1.add("YZ");
+		lhs1.add("N");
+		lhs1.add("P");
+		lhs1.add("C");
+		lhs1.add("ABC");
+		
+		System.out.println(lhs1);
+	}
+
+}

@@ -1,0 +1,24 @@
+package day32collections;
+
+import java.util.HashSet;
+
+public class HashSet01 {
+	
+	/*
+	   1)In HashSet, elements are sorted randomly. So HashSet is super fast.
+	 */
+
+	public static void main(String[] args) {
+	
+		HashSet<String> hs1 = new HashSet<>();
+		
+		hs1.add("Apple");
+		hs1.add("Mango");
+		hs1.add("Orange");
+		hs1.add("Palm");
+		hs1.add("Apricot");
+		hs1.add("Palm");
+		System.out.println(hs1);
+	}
+
+}

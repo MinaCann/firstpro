@@ -1,0 +1,29 @@
+package day34maps;
+
+import java.util.TreeMap;
+
+public class TreeMap01 {
+      
+	/*
+	   1)TreeMap puts the elements in natural order by using keys
+	   2)TreeMap is not thread-safe ans is not synchronized
+	   3)TreeMap does not accept null as key
+	   4)TreeMap accepts "null" in values
+	 */
+	
+	public static void main(String[] args) {
+		
+		TreeMap<Integer, String> tm1 = new TreeMap<>();
+		
+		tm1.put(105, "Ali");
+		tm1.put(101, "Veli");
+		tm1.put(103, "Kaan");
+		tm1.put(102, "Eric");
+		tm1.put(104, "John");
+		tm1.put(null, "XXXX");
+
+		System.out.println(tm1);//{101=Veli, 102=Eric, 103=Kaan, 104=John, 105=Ali}
+
+	}
+
+}

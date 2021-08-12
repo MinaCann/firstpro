@@ -1,0 +1,18 @@
+package day33collections;
+
+import java.util.HashMap;
+
+public class HashMap01 {
+
+	public static void main(String[] args) {
+	
+      HashMap<Integer, String> hm1= new HashMap<>();
+      
+      hm1.put(100, "Ali Can");
+      hm1.put(101, "Veli Han");
+      
+      System.out.println(hm1);
+      
+	}
+
+}

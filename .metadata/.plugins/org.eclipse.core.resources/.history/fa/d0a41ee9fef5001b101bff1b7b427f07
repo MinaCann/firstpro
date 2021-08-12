@@ -1,0 +1,57 @@
+package constructor;
+
+import java.util.Scanner;
+
+class Student{
+		
+		private String name;
+		private String surName;
+		
+		
+		
+		Student(){
+			
+		}
+		Student(String name,String surName){
+			this.name=name;
+			this.surName=surName;
+		}
+		public void changeName(String name) {
+			this.name=name;
+			
+			
+		}
+		@Override
+		public String toString() {
+			return name + " " + surName;
+		}
+		public void changeSurName(String name) {
+			Scanner scan=new Scanner(System.in);
+			String lastName=scan.nextLine();
+			this.surName=lastName;
+		}
+	}
+	
+
+
+	public class Replit_Constructor_02 {
+	/*
+	  	 Create a student's variables in the main method and use this assign variables
+	     create a method named Change name, student as parameter
+		 get the information and change all the information in the method and add the new information
+		 have it print
+		 The line where we call the Rename method in the Main method is immediately then reprint student information
+		 Create a method named change surname, this method is "last name" as parameter get the variable. In the method, ask the user to enter a new last name and
+		 change the old last name (i.e. can).		
+       */
+		public static void main(String[] args) {
+			
+			Scanner scan=new Scanner(System.in);
+			
+			Student st1=new Student();
+			st1.changeName("Zebercettin");
+			st1.changeSurName();
+			System.out.println(st1);
+	}
+
+}

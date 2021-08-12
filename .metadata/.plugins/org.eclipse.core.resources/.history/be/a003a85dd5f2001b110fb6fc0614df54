@@ -1,0 +1,37 @@
+package javapractice03;
+
+import java.util.ArrayList;
+
+public class JavaIsFun01 {
+	 //Write a function to check whether a string is pangram or not assuming that the string passed in
+	//does not have any punctuation. Pangrams are words or sentences containing every letter of the alphabet at least once.
+	//EX: The quick brown fox jumps over the lazy dog --> true
+    static boolean isPangram(String str) {
+    	str=str.replace(" ", "").toUpperCase();
+    	ArrayList<Character> al=new ArrayList<>();
+    	
+    	for(int i=0;i<str.length();i++) {
+    		char each =str.charAt(i);
+    		//if(!al.contains(each) && each>=65 && each <=90) {
+    			//if(!al.contains(each) && each>='A' && each <='Z'){
+    			if(!al.contains(each) && Character.isLetter(each)) {
+    		al.add(each);
+    		}
+    	}
+    	
+    	
+    	
+    	return al.size()== 26;
+    }
+	
+	public static void main(String[] args) {
+		System.out.println("The quick brown fox jumps over the lazy dog");
+		
+
+
+
+	
+
+	}
+
+}

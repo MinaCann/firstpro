@@ -1,0 +1,20 @@
+package day34maps;
+
+import java.util.TreeMap;
+
+public class TreeMap01 {
+
+	public static void main(String[] args) {
+		
+		TreeMap<Integer, String> tm1 = new TreeMap<>();
+		
+		tm1.put(105, "Ali");
+		tm1.put(101, "Veli");
+		tm1.put(103, "Kaan");
+		tm1.put(102, "Eric");
+		tm1.put(104, "John");
+		
+		System.out.println(tm1);
+	}
+
+}
